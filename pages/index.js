@@ -9,23 +9,24 @@ import Banner from '../components/Banner'
 const Wrap = styled.div`
     background-color: black;
 `
-
-const BackgroundNavAndBg = styled.div`
-    background-image: url('/static/images/home-intro-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: 52%;
-    background-position: center;
-`
+const Content = {
+    width: '100%',
+    position: 'fixed',
+    top: '0'
+}
 
 export default class index extends Component {
     render() {
         return (
             <Fragment>
                 <Wrap>
-                    <BackgroundNavAndBg>
+                    <video autoPlay loop width="100%" className="text-center">
+                        <source src="../static/images/banner.mp4" type="video/mp4"/>
+                    </video>
+                    <div style={Content}>
                         <Navbar/>
                         <Banner/>
-                    </BackgroundNavAndBg>
+                    </div>
                 </Wrap>
             </Fragment>
         )
