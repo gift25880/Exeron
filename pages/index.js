@@ -10,11 +10,6 @@ import TwoCols from '../components/TwoColumn'
 const Wrap = styled.div`
     background-color: black;
 `
-const Content = {
-    width: '100%',
-    position: 'fixed',
-    top: '0'
-}
 
 export default class index extends Component {
     render() {
@@ -23,12 +18,12 @@ export default class index extends Component {
                 <Wrap>
                     <video autoPlay loop width="100%" className="text-center">
                         <source src="../static/images/banner.mp4" type="video/mp4"/>
-                    </video>
-                    <div style={Content}>
+                    </video>        
+                    <div className="overlay">
                         <Navbar/>
                         <Banner/>
                     </div>
-                </Wrap>
+                </Wrap>   
                 <TwoCols/> 
             </Fragment>
         )
