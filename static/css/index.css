@@ -2,9 +2,6 @@
     background-color: transparent !important;
 }
 
-
-
-
 .navbar-item {
     color: white !important;
 }
@@ -13,4 +10,12 @@
     color: black !important;
     background-color: white;
     border-radius: 20px;
+}
+
+.video-link {
+    color: inherit;
+}
+
+.video-link:hover {
+    color: mediumspringgreen !important;
 }
