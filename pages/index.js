@@ -4,6 +4,7 @@ import '../static/css/index.css'
 import styled from 'styled-components'
 import Navbar from '../components/Navbar'
 import Banner from '../components/Banner'
+import TwoCols from '../components/TwoColumn'
 
 
 const Wrap = styled.div`
@@ -28,6 +29,7 @@ export default class index extends Component {
                         <Banner/>
                     </div>
                 </Wrap>
+                <TwoCols/> 
             </Fragment>
         )
     }
