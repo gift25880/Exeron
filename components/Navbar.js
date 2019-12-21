@@ -35,17 +35,38 @@ const Navbar1 = (props) => {
                             <DropdownToggle nav caret style={{paddingRight: '40px', fontSize: '12px'}} className="text-white font-weight-bold">
                                 What Is EXERON
                             </DropdownToggle>
-                            <DropdownMenu right className="text-center font-weight-bold" style={{fontSize: '12px'}}>
-                                <DropdownItem >
+                            <DropdownMenu right className="text-center" style={{fontSize: '12px'}}>
+                                <DropdownItem className="font-weight-bold">
                                     This Is EXERON
                                 </DropdownItem>
                                 <DropdownItem divider />
-                                <DropdownItem>
+                                <DropdownItem className="font-weight-bold">
                                     Videos
                                 </DropdownItem>
                                 <DropdownItem divider />
-                                <DropdownItem>
+                                <DropdownItem className="font-weight-bold">
                                     Power Range
+                                </DropdownItem>
+                                <DropdownItem className="text-left pt-4">
+                                    → X &lt; 24kW
+                                </DropdownItem>
+                                <DropdownItem className="text-left pt-3">
+                                    → X &gt; 24kW
+                                </DropdownItem>
+                                <DropdownItem className="text-left pt-3">
+                                    → Customized X
+                                </DropdownItem>
+                                <DropdownItem divider />
+                                <DropdownItem className="font-weight-bold">
+                                    Configurator
+                                </DropdownItem>
+                                <DropdownItem divider />
+                                <DropdownItem className="font-weight-bold">
+                                    ees Award
+                                </DropdownItem>
+                                <DropdownItem divider />
+                                <DropdownItem className="font-weight-bold">
+                                    X Around the World
                                 </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
