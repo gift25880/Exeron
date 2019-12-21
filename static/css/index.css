@@ -1,0 +1,17 @@
+.navbar-background {
+    background-color: transparent !important;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner-text {
+    padding: 16% 0% 16% 0%;
+    text-align: center;
+    color: white;
+}
+
+.navbar-item {
+    margin-right: 50px;
+}
