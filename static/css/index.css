@@ -13,5 +13,11 @@
 }
 
 .navbar-item {
-    margin-right: 50px;
+    color: white !important;
+}
+
+.navbar-item:hover {
+    color: black !important;
+    background-color: white;
+    border-radius: 20px;
 }

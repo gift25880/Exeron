@@ -13,6 +13,17 @@ import {
     DropdownItem,
 } from 'reactstrap'; 
 
+const Active = {
+    color: 'black',
+    backgroundColor: 'white',
+    fontWeight: 'bold',
+    borderRadius: '15px',
+    paddingLeft: '20px',
+    paddingRight: '20px',
+    fontSize: '12px'
+}
+
+
 const Navbar1 = (props) => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -27,12 +38,12 @@ const Navbar1 = (props) => {
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
-                    <Nav navbar style={{paddingLeft: "40px"}}>
-                        <NavItem style={{paddingRight: '40px'}}>
-                            <NavLink href="/" style={{fontSize: '12px'}} className="text-white font-weight-bold">Home</NavLink>
+                    <Nav navbar style={{paddingLeft: "20px"}}>
+                        <NavItem style={{marginLeft: "20px", marginRight: '20px'}}>
+                            <NavLink href="/" style={Active}>Home</NavLink>
                         </NavItem>
                         <UncontrolledDropdown nav inNavbar>
-                            <DropdownToggle nav caret style={{paddingRight: '40px', fontSize: '12px'}} className="text-white font-weight-bold">
+                            <DropdownToggle nav caret style={{marginLeft: "20px", marginRight: '20px', fontSize: '12px'}} className="font-weight-bold navbar-item">
                                 What Is EXERON
                             </DropdownToggle>
                             <DropdownMenu right className="text-center" style={{fontSize: '12px'}}>
@@ -70,23 +81,23 @@ const Navbar1 = (props) => {
                                 </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
-                        <NavItem style={{paddingRight: '40px'}}>
-                            <NavLink href="/" style={{fontSize: '12px'}} className="text-white font-weight-bold">Applications</NavLink>
+                        <NavItem style={{marginLeft: "20px", marginRight: '20px'}}>
+                            <NavLink href="/" style={{fontSize: '12px'}} className="font-weight-bold navbar-item">Applications</NavLink>
                         </NavItem>
-                        <NavItem style={{paddingRight: '40px'}}>
-                            <NavLink href="/" style={{fontSize: '12px'}} className="text-white font-weight-bold">Benefits</NavLink>
+                        <NavItem style={{marginLeft: "20px", marginRight: '20px'}}>
+                            <NavLink href="/" style={{fontSize: '12px'}} className="font-weight-bold navbar-item">Benefits</NavLink>
                         </NavItem>
-                        <NavItem style={{paddingRight: '40px'}}>
-                            <NavLink href="/" style={{fontSize: '12px'}} className="text-white font-weight-bold">Downloads</NavLink>
+                        <NavItem style={{marginLeft: "20px", marginRight: '20px'}}>
+                            <NavLink href="/" style={{fontSize: '12px'}} className="font-weight-bold navbar-item">Downloads</NavLink>
                         </NavItem>
-                        <NavItem style={{paddingRight: '40px'}}>
-                            <NavLink href="/" style={{fontSize: '12px'}} className="text-white font-weight-bold">FAQ</NavLink>
+                        <NavItem style={{marginLeft: "20px", marginRight: '20px'}}>
+                            <NavLink href="/" style={{fontSize: '12px'}} className="font-weight-bold navbar-item">FAQ</NavLink>
                         </NavItem>
-                        <NavItem style={{marginRight: '40px'}}>
-                            <NavLink href="/" style={{fontSize: '12px'}} className="text-white font-weight-bold">About IPS</NavLink>
+                        <NavItem style={{marginLeft: "20px", marginRight: '20px'}}>
+                            <NavLink href="/" style={{fontSize: '12px'}} className="font-weight-bold navbar-item">About IPS</NavLink>
                         </NavItem>
-                        <NavItem style={{marginRight: '40px'}}>
-                            <NavLink href="/" style={{fontSize: '12px'}} className="text-white font-weight-bold">Contact Us</NavLink>
+                        <NavItem style={{marginLeft: "20px", marginRight: '20px'}}>
+                            <NavLink href="/" style={{fontSize: '12px'}} className="font-weight-bold navbar-item">Contact Us</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>
