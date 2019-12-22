@@ -31,7 +31,7 @@ const Navbar1 = (props) => {
 
     return (
 
-        <Navbar color="black" dark expand="md" className="navbar-background" style={{paddingTop: "1.5%", paddingLeft: "5.25%"}}>
+        <Navbar color="black" dark expand="md" className="navbar-background fixed-top" style={{paddingTop: "1.5%", paddingLeft: "5.25%"}}>
             <div className="container-fluid">
                 <NavbarBrand href="/">
                     <img src="../static/images/logo.png" alt="Logo"/>
