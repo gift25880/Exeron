@@ -8,7 +8,7 @@ export default class Banner extends Component {
         return (
             <div className="banner">
                 <div className="banner-text text-white text-center">
-                    <h3 style={{paddingTop: '12%', paddingBottom: '15%'}}>I am EXERON</h3>
+                    <h3 style={{paddingTop: '18%', paddingBottom: '15%'}}>I am EXERON</h3>
                     <p>The beginning of the</p>
                     <img src="../static/images/off-grid.png"/>
                     <h5 style={{fontWeight: 'bold'}} className="mt-2">REVOLUTION</h5>
